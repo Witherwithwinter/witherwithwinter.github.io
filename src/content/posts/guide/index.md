@@ -5,7 +5,7 @@ description: "How to use this blog template."
 image: "./cover.png"
 tags: ["Mizuki", "Blogging", "Customization"]
 category: Guides
-draft: false
+draft: true
 ---
 
 

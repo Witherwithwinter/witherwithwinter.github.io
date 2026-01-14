@@ -25,6 +25,7 @@ export const siteConfig: SiteConfig = {
 	title: "Witherwithwinter",
 	subtitle: "Blog",
 	siteURL: "http://localhost:4321/", // 请替换为你的站点URL，以斜杠结尾
+    // https://witherwithwinter-blog-jb7yc3lu.edgeone.cool/
 	siteStartDate: "2026-01-12", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
@@ -77,7 +78,7 @@ export const siteConfig: SiteConfig = {
 	// 标签样式配置
 	tagStyle: {
 		// 是否使用新样式（悬停高亮样式）还是旧样式（外框常亮样式）
-		useNewStyle: false,
+		useNewStyle: true,
 	},
 
 	// 壁纸模式配置
@@ -171,17 +172,17 @@ export const siteConfig: SiteConfig = {
 		enable: true, // 启用目录功能
 		mode: "sidebar", // 目录显示模式："float" 悬浮按钮模式，"sidebar" 侧边栏模式
 		depth: 2, // 目录深度，1-6，1 表示只显示 h1 标题，2 表示显示 h1 和 h2 标题，依此类推
-		useJapaneseBadge: true, // 使用日语假名标记（あいうえお...）代替数字，开启后会将 1、2、3... 改为 あ、い、う...
+		useJapaneseBadge: false, // 使用日语假名标记（あいうえお...）代替数字，开启后会将 1、2、3... 改为 あ、い、う...
 	},
 	showCoverInContent: true, // 在文章内容页显示文章封面
 	generateOgImages: false, // 启用生成OpenGraph图片功能,注意开启后要渲染很长时间，不建议本地调试的时候开启
 	favicon: [
 		// 留空以使用默认 favicon
-		// {
-		//   src: '/favicon/icon.png',    // 图标文件路径
-		//   theme: 'light',              // 可选，指定主题 'light' | 'dark'
-		//   sizes: '32x32',              // 可选，图标大小
-		// }
+		{
+		  src: '/favicon/icon.png',    // 图标文件路径
+		  theme: 'light',              // 可选，指定主题 'light' | 'dark'
+		  sizes: '32x32',              // 可选，图标大小
+		}
 	],
 
 	// 字体配置
@@ -251,17 +252,17 @@ export const navBarConfig: NavBarConfig = {
 					external: true,
 					icon: "fa6-brands:github",
 				},
+                {
+                    name: "Bilibili",
+                    url: "https://space.bilibili.com/3546704863300466",
+                    external: true,
+                    icon: "fa6-brands:bilibili",
+                },
 				{
 					name: "Codeforces",
 					url: "https://codeforces.com/profile/Witherwithwinter", // 替换为你的Codeforces个人主页
 					external: true,
 					icon: "simple-icons:codeforces", // 新增Codeforces
-				},
-				{
-					name: "Bilibili",
-					url: "https://space.bilibili.com/3546704863300466",
-					external: true,
-					icon: "fa6-brands:bilibili",
 				},
 				// {
 				// 	name: "Gitee",
@@ -276,11 +277,11 @@ export const navBarConfig: NavBarConfig = {
 			url: "/content/",
 			icon: "material-symbols:person",
 			children: [
-				{
-					name: "Anime",
-					url: "/anime/",
-					icon: "material-symbols:movie",
-				},
+				// {
+				// 	name: "Anime",
+				// 	url: "/anime/",
+				// 	icon: "material-symbols:movie",
+				// },
 				{
 					name: "Diary",
 					url: "/diary/",
@@ -350,6 +351,11 @@ export const profileConfig: ProfileConfig = {
 		speed: 80, // 打字速度（毫秒）
 	},
 	links: [
+        {
+            name: "GitHub",
+            icon: "fa6-brands:github",
+            url: "https://github.com/Witherwithwinter",
+        },
 		{
 			name: "Bilibli",
 			icon: "fa6-brands:bilibili",
@@ -365,11 +371,6 @@ export const profileConfig: ProfileConfig = {
             icon: "simple-icons:codeforces",
             url: "https://codeforces.com/profile/Witherwithwinter",
         },
-		{
-			name: "GitHub",
-			icon: "fa6-brands:github",
-			url: "https://github.com/Witherwithwinter",
-		},
 		// {
 		// 	name: "Codeberg",
 		// 	icon: "simple-icons:codeberg",
@@ -437,7 +438,7 @@ export const shareConfig: ShareConfig = {
 
 export const announcementConfig: AnnouncementConfig = {
 	title: "Announcement", // 公告标题
-	content: "Welcome to my blog! This is a sample announcement.", // 公告内容
+	content: "Welcome to my blog! Hope you have a nice day! OvO", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
@@ -452,8 +453,8 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	mode: "meting", // 音乐播放器模式，可选 "local" 或 "meting"
 	meting_api:
 		"https://www.bilibili.uno/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
-	id: "14164869977", // 歌单ID
-	server: "netease", // 音乐源服务器。有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
+	id: "9646601477", // 歌单ID
+	server: "tencent", // 音乐源服务器。有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
 	type: "playlist", // 播单类型
 };
 

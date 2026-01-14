@@ -1,6 +1,6 @@
 ---
 title: Codeforces Round 1072 (Div. 3)
-published: 2022-07-01
+published: 2026-01-15
 tags: [Codeforces, div3]
 category: Tutorial
 draft: false

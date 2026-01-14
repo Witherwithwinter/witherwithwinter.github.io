@@ -45,9 +45,9 @@ export const projectsData: Project[] = [
 		category: "web",
 		techStack: ["Astro", "TypeScript", "Tailwind CSS", "Svelte"],
 		status: "completed",
-		liveDemo: "https://witherwithwinter-blog-jb7yc3lu.edgeone.cool/",
+		liveDemo: "https://witherwithwinter-blog.vercel.app",
 		sourceCode: "https://github.com/Witherwithwinter/Witherwithwinter-Blog", // 更改为GitHub链接
-		visitUrl: "https://witherwithwinter-blog-jb7yc3lu.edgeone.cool/", // 添加前往项目链接
+		visitUrl: "https://witherwithwinter-blog.vercel.app", // 添加前往项目链接
 		startDate: "2026-01-11",
 		endDate: "2026-01-14",
 		featured: true,

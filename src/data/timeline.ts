@@ -62,7 +62,7 @@ export const timelineData: TimelineItem[] = [
 			},
 			{
 				name: "Live Demo",
-				url: "https://witherwithwinter-blog-jb7yc3lu.edgeone.cool",
+				url: "https://witherwithwinter-blog.vercel.app",
 				type: "website",
 			},
 		],

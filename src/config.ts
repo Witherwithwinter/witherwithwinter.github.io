@@ -25,9 +25,9 @@ const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UT
 export const siteConfig: SiteConfig = {
 	title: "Witherwithwinter",
 	subtitle: "Blog",
-	siteURL: "https://witherwithwinter-blog-jb7yc3lu.edgeone.cool/", // 请替换为你的站点URL，以斜杠结尾
-    // https://witherwithwinter-blog-jb7yc3lu.edgeone.cool/
-    // http://localhost:4321/
+	siteURL: "https://witherwithwinter-blog.vercel.app/", // 请替换为你的站点URL，以斜杠结尾
+	// https://witherwithwinter-blog.vercel.app/
+	// http://localhost:4321/
 	siteStartDate: "2026-01-12", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
@@ -181,10 +181,10 @@ export const siteConfig: SiteConfig = {
 	favicon: [
 		// 留空以使用默认 favicon
 		{
-		  src: '/favicon/favicon.ico',    // 图标文件路径
-		  theme: 'light',              // 可选，指定主题 'light' | 'dark'
-		  sizes: '32x32',              // 可选，图标大小
-		}
+			src: "/favicon/favicon.ico", // 图标文件路径
+			theme: "light", // 可选，指定主题 'light' | 'dark'
+			sizes: "32x32", // 可选，图标大小
+		},
 	],
 
 	// 字体配置
@@ -254,12 +254,12 @@ export const navBarConfig: NavBarConfig = {
 					external: true,
 					icon: "fa6-brands:github",
 				},
-                {
-                    name: "Bilibili",
-                    url: "https://space.bilibili.com/3546704863300466",
-                    external: true,
-                    icon: "fa6-brands:bilibili",
-                },
+				{
+					name: "Bilibili",
+					url: "https://space.bilibili.com/3546704863300466",
+					external: true,
+					icon: "fa6-brands:bilibili",
+				},
 				{
 					name: "Codeforces",
 					url: "https://codeforces.com/profile/Witherwithwinter", // 替换为你的Codeforces个人主页
@@ -353,11 +353,11 @@ export const profileConfig: ProfileConfig = {
 		speed: 80, // 打字速度（毫秒）
 	},
 	links: [
-        {
-            name: "GitHub",
-            icon: "fa6-brands:github",
-            url: "https://github.com/Witherwithwinter",
-        },
+		{
+			name: "GitHub",
+			icon: "fa6-brands:github",
+			url: "https://github.com/Witherwithwinter",
+		},
 		{
 			name: "Bilibli",
 			icon: "fa6-brands:bilibili",
@@ -368,11 +368,11 @@ export const profileConfig: ProfileConfig = {
 		// 	icon: "mdi:git",
 		// 	url: "https://gitee.com/matsuzakayuki",
 		// },
-        {
-            name: "Codeforces",
-            icon: "simple-icons:codeforces",
-            url: "https://codeforces.com/profile/Witherwithwinter",
-        },
+		{
+			name: "Codeforces",
+			icon: "simple-icons:codeforces",
+			url: "https://codeforces.com/profile/Witherwithwinter",
+		},
 		// {
 		// 	name: "Codeberg",
 		// 	icon: "simple-icons:codeberg",
@@ -440,7 +440,8 @@ export const shareConfig: ShareConfig = {
 
 export const announcementConfig: AnnouncementConfig = {
 	title: "Announcement", // 公告标题
-	content: "如果歌单加载失败，请刷新页面。如果看不见目录组件，请缩小网站比例。", // 公告内容
+	content:
+		"如果歌单加载失败，请刷新页面。如果看不见目录组件，请缩小网站比例。", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接

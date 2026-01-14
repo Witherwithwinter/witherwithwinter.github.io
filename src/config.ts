@@ -1,3 +1,4 @@
+import { zh_CN } from "@i18n/languages/zh_CN";
 import type {
 	AnnouncementConfig,
 	CommentConfig,
@@ -22,7 +23,7 @@ import { LinkPreset } from "./types/config";
 const SITE_LANG = "en"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UTC+8
 export const siteConfig: SiteConfig = {
-	title: "Witherwithwinter",
+	title: "W-W-W",
 	subtitle: "Blog",
 	siteURL: "http://localhost:4321/", // 请替换为你的站点URL，以斜杠结尾
     // https://witherwithwinter-blog-jb7yc3lu.edgeone.cool/
@@ -345,7 +346,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "Winterwithwither",
-	bio: "Life just like code, I will debug and run it.",
+	bio: "Life just like code, I will debug and keep it running.",
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
 		speed: 80, // 打字速度（毫秒）
@@ -427,8 +428,8 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 export const commentConfig: CommentConfig = {
 	enable: true, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
 	twikoo: {
-		envId: "https://twikoo.vercel.app",
-		lang: SITE_LANG,
+		envId: "https://witherwithwinterblog.vercel.app/",
+		lang: "zh_CN",
 	},
 };
 
@@ -453,8 +454,8 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	mode: "meting", // 音乐播放器模式，可选 "local" 或 "meting"
 	meting_api:
 		"https://www.bilibili.uno/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
-	id: "9646601477", // 歌单ID
-	server: "tencent", // 音乐源服务器。有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
+	id: "17669448966", // 歌单ID
+	server: "netease", // 音乐源服务器。有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
 	type: "playlist", // 播单类型
 };
 
@@ -682,10 +683,10 @@ export const widgetConfigs = {
 } as const;
 
 export const umamiConfig = {
-	enabled: false, // 是否显示Umami统计
-	apiKey: import.meta.env.UMAMI_API_KEY || "api_xxxxxxxx", // API密钥优先从环境变量读取，否则使用配置文件中的值
+	enabled: true, // 是否显示Umami统计
+	apiKey: "api_pGMNG5aLYYGWCpmDJNymFTmjeNShSx3o", // API密钥优先从环境变量读取，否则使用配置文件中的值
 	baseUrl: "https://api.umami.is", // Umami Cloud API地址
 	scripts: `
-<script defer src="XXXX.XXX" data-website-id="ABCD1234"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="524f79a4-fa30-475d-b6da-4b8a4610321a"></script>
   `.trim(), // 上面填你要插入的Script,不用再去Layout中插入
 } as const;

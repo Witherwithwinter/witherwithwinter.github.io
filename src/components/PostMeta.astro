@@ -132,10 +132,39 @@ const {
             return `浏览量 ${pageViews} · 访客 ${visitors}`;
         }
         
+        // 新增：实现Umami API调用函数
+        async function getUmamiPageStats(baseUrl, apiKey, websiteId, pageUrl) {
+            const response = await fetch(`${baseUrl}/websites/${websiteId}/stats`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${apiKey}`
+                },
+                body: JSON.stringify({
+                    startAt: Date.now() - 30 * 24 * 60 * 60 * 1000, // 过去30天
+                    endAt: Date.now(),
+                    filters: [{
+                        type: 'url',
+                        value: pageUrl
+                    }]
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Umami API error: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            return {
+                pageviews: data.pageviews || 0,
+                visitors: data.visitors || 0
+            };
+        }
+        
         // 获取访问量统计
         async function fetchPageViews(isRetry = false) {
             // @ts-ignore
-            if (!umamiConfig.enabled || !umamiWebsiteId || !id || !isRetry) return;
+            if (!umamiConfig.enabled || !umamiWebsiteId || !id) return; // 移除!isRetry条件
             
             try {
                 // 构造文章页面的URL路径
@@ -144,7 +173,6 @@ const {
                 // 调用全局工具获取特定页面的 Umami 统计数据
                 const stats = await getUmamiPageStats(umamiBaseUrl, umamiApiKey, umamiWebsiteId, pageUrl);
                 
-                // 从返回的数据中提取页面浏览量和访客数
                 const pageViews = stats.pageviews || 0;
                 const visitors = stats.visitors || 0;
                 

@@ -68,11 +68,33 @@ const umamiBaseUrl = umamiConfig.baseUrl || "";
             return `浏览量 ${pageViews} · 访问次数 ${visits}`;
         }
         
+        // 新增：实现Umami API调用函数
+        async function getUmamiWebsiteStats(baseUrl, apiKey, websiteId) {
+            const response = await fetch(`${baseUrl}/websites/${websiteId}/stats`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${apiKey}`
+                },
+                body: JSON.stringify({
+                    startAt: Date.now() - 30 * 24 * 60 * 60 * 1000, // 过去30天
+                    endAt: Date.now()
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Umami API error: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            return {
+                pageviews: data.pageviews || 0,
+                visits: data.visits || 0
+            };
+        }
+        
         // 获取访问量统计
         async function fetchSiteStats(isRetry = false) {
-            if (!umamiConfig.enabled || !isRetry) {
-                // isRetry is used to avoid recursive retry loop or similar logic if implemented
-            }
             if (!umamiConfig.enabled) {
                 return;
             }

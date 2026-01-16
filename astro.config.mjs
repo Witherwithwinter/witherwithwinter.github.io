@@ -30,7 +30,7 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 // https://astro.build/config
 export default defineConfig({
 	site: siteConfig.siteURL,
-	base: "/",
+	base: "/Witherwithwinter-Blog",
 	trailingSlash: "always",
 
 	output: "static",

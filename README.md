@@ -1,7 +1,7 @@
 # About 
 A personal blog, Powered by [Astro](https://astro.build) & [Mizuki](https://github.com/matsuzaka-yuki/Mizuki).
 
-Take a look: [My blog](https://witherwithwinter-blog.vercel.app/).
+Take a look: [My blog](https://witherwithwinter.github.io/).
 
 # 🌸 Mizuki  
 ![Node.js >= 20](https://img.shields.io/badge/node.js-%3E%3D20-brightgreen) 

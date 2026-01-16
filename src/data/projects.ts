@@ -39,15 +39,15 @@ export const projectsData: Project[] = [
 	{
 		id: "WitherwithwinterBlog",
 		title: "Witherwithwinter-Blog",
-        description:
+		description:
 			"Personal blog, which is powered by Mizuki -- Modern blog theme developed based on the Astro framework, supporting multilingual, dark mode, and responsive design features.",
 		image: "",
 		category: "web",
 		techStack: ["Astro", "TypeScript", "Tailwind CSS", "Svelte"],
 		status: "completed",
-		liveDemo: "https://witherwithwinter-blog.vercel.app",
+		liveDemo: "https://witherwithwinter.github.io",
 		sourceCode: "https://github.com/Witherwithwinter/Witherwithwinter-Blog", // 更改为GitHub链接
-		visitUrl: "https://witherwithwinter-blog.vercel.app", // 添加前往项目链接
+		visitUrl: "https://witherwithwinter.github.io", // 添加前往项目链接
 		startDate: "2026-01-11",
 		endDate: "2026-01-14",
 		featured: true,

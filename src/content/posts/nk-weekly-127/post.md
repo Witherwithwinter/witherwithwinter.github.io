@@ -7,11 +7,11 @@ category: Tutorial
 draft: false
 ---
 
-# ??体验
+# ☁️体验
 
 比较简单的一场周赛。
 
-# ?题解
+# 💡题解
 
 ## A - Get The Number
 
@@ -327,7 +327,7 @@ cin >> _;
 ```cpp
 ``` -->
 
-# ?模板部分
+# 🎈模板部分
 
 ## 火车头
 

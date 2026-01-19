@@ -162,7 +162,7 @@ void solve()
 }
 ```
 
-## D - Permutation? Counting
+## D - Permutation² Counting
 
 ### 题意
 

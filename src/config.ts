@@ -47,7 +47,7 @@ export const siteConfig: SiteConfig = {
 		projects: true, // 项目页面开关
 		skills: true, // 技能页面开关
 		timeline: true, // 时间线页面开关
-		albums: true, // 相册页面开关
+		albums: false, // 相册页面开关
 		devices: false, // 设备页面开关
 	},
 
@@ -100,19 +100,9 @@ export const siteConfig: SiteConfig = {
 		src: {
 			desktop: [
 				"/assets/desktop-banner/1.webp",
-				"/assets/desktop-banner/2.webp",
-				"/assets/desktop-banner/3.webp",
-				"/assets/desktop-banner/4.webp",
-				"/assets/desktop-banner/5.webp",
-				"/assets/desktop-banner/6.webp",
 			], // 桌面横幅图片
 			mobile: [
 				"/assets/mobile-banner/1.webp",
-				"/assets/mobile-banner/2.webp",
-				"/assets/mobile-banner/3.webp",
-				"/assets/mobile-banner/4.webp",
-				"/assets/mobile-banner/5.webp",
-				"/assets/mobile-banner/6.webp",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -141,14 +131,45 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "美しいミズキ", // 主页横幅主标题
-
-			subtitle: [
-				"特別なことはないけど、君がいると十分です",
-				"今でもあなたは私の光",
-				"君ってさ、知らないうちに私の毎日になってたよ",
-				"君と話すと、なんか毎日がちょっと楽しくなるんだ",
-				"今日はなんでもない日。でも、ちょっとだけいい日",
+			title: "Witherwithwinter's Blog", // 主页横幅主标题
+            // 主页横幅副标题
+			subtitle: [ 
+                "《小人物的坚持》",
+				"一个人的坚持会有多难？",
+                "在场的所有蛊仙都能回答这个问题",
+                "因为他们当中",
+                "有的因为责任而坚持",
+                "有的因为仇恨而坚持",
+                "有的因为精彩而坚持",
+                "有的因为爱情而坚持",
+                "有的因为梦想而坚持...",
+                "而方源的回答呢？",
+                "他仍旧面无表情",
+                "毫无所动地向前进",
+                "我曾经呐喊过",
+                "渐渐地",
+                "我不发出声音",
+                "我曾经哭泣过",
+                "渐渐地",
+                "我不再流泪",
+                "我曾经悲伤过",
+                "渐渐地",
+                "我能承受一切",
+                "我曾经喜悦过",
+                "渐渐地",
+                "我看淡世间",
+                "而如今！",
+                "我只剩下面无表情",
+                "我的目光如磐石般坚硬",
+                "我的心中只剩下坚持！",
+                "这就是我",
+                "一个小人物",
+                "方源的————坚持！",
+                "光芒骤放",
+                "不可逼视",
+                "坚持仙蛊",
+                "在这一刻",
+                "炼成！！！",
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
@@ -289,11 +310,11 @@ export const navBarConfig: NavBarConfig = {
 					url: "/diary/",
 					icon: "material-symbols:book",
 				},
-				{
-					name: "Gallery",
-					url: "/albums/",
-					icon: "material-symbols:photo-library",
-				},
+				// {
+				// 	name: "Gallery",
+				// 	url: "/albums/",
+				// 	icon: "material-symbols:photo-library",
+				// },
 				// {
 				// 	name: "Devices",
 				// 	url: "devices/",
@@ -347,7 +368,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "Winterwithwither",
-	bio: "Life just like code, I will debug and keep it running.",
+	bio: "纵观五域两天，我只悟出两个字————坚持！",
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
 		speed: 80, // 打字速度（毫秒）
@@ -441,7 +462,7 @@ export const shareConfig: ShareConfig = {
 export const announcementConfig: AnnouncementConfig = {
 	title: "Announcement", // 公告标题
 	content:
-		"如果歌单加载失败，请刷新页面。\n如果看不见目录组件，请缩小网站比例。", // 公告内容
+		"欢迎来到我的博客！这里分享我的个人生活与学习日常！", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
@@ -622,7 +643,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 };
 
 export const sakuraConfig: SakuraConfig = {
-	enable: true, // 默认关闭樱花特效
+	enable: false, // 默认关闭樱花特效
 	sakuraNum: 21, // 樱花数量
 	limitTimes: -1, // 樱花越界限制次数，-1为无限循环
 	size: {
@@ -650,7 +671,7 @@ export const sakuraConfig: SakuraConfig = {
 
 // Pio 看板娘配置
 export const pioConfig: import("./types/config").PioConfig = {
-	enable: true, // 启用看板娘
+	enable: false, // 启用看板娘
 	models: ["/pio/models/pio/model.json"], // 默认模型路径
 	position: "left", // 默认位置在右侧
 	width: 280, // 默认宽度

@@ -99,10 +99,10 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"/assets/desktop-banner/1.webp",
+				"/assets/desktop-banner/my1.webp",
 			], // 桌面横幅图片
 			mobile: [
-				"/assets/mobile-banner/1.webp",
+				"/assets/mobile-banner/my1.webp",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -175,8 +175,8 @@ export const siteConfig: SiteConfig = {
 				enable: true, // 启用副标题打字机效果
 
 				speed: 100, // 打字速度（毫秒）
-				deleteSpeed: 50, // 删除速度（毫秒）
-				pauseTime: 2000, // 完全显示后的暂停时间（毫秒）
+				deleteSpeed: 100, // 删除速度（毫秒）
+				pauseTime: 1000, // 完全显示后的暂停时间（毫秒）
 			},
 		},
 

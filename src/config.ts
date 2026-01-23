@@ -108,12 +108,8 @@ export const siteConfig: SiteConfig = {
 	banner: {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
-			desktop: [
-				"/assets/desktop-banner/my1.webp",
-			], // 桌面横幅图片
-			mobile: [
-				"/assets/mobile-banner/my1.webp",
-			], // 移动横幅图片
+			desktop: ["/assets/desktop-banner/my1.webp"], // 桌面横幅图片
+			mobile: ["/assets/mobile-banner/my1.webp"], // 移动横幅图片
 		}, // 使用本地横幅图片
 
 		position: "center", // 等同于 object-position，仅支持 'top', 'center', 'bottom'。默认为 'center'
@@ -141,43 +137,43 @@ export const siteConfig: SiteConfig = {
 		homeText: {
 			enable: true, // 在主页显示自定义文本
 			title: "Witherwithwinter's Blog", // 主页横幅主标题
-            // 主页横幅副标题
-			subtitle: [ 
-                "《小人物的坚持》",
+			// 主页横幅副标题
+			subtitle: [
+				"《小人物的坚持》",
 				"一个人的坚持会有多难？",
-                "在场的所有蛊仙都能回答这个问题",
-                "因为他们当中",
-                "有的因为责任而坚持",
-                "有的因为仇恨而坚持",
-                "有的因为精彩而坚持",
-                "有的因为爱情而坚持...",
-                "而方源的回答呢？",
-                "他仍旧面无表情",
-                "毫无所动地向前进",
-                "我曾经呐喊过",
-                "渐渐地",
-                "我不发出声音",
-                "我曾经哭泣过",
-                "渐渐地",
-                "我不再流泪",
-                "我曾经悲伤过",
-                "渐渐地",
-                "我能承受一切",
-                "我曾经喜悦过",
-                "渐渐地",
-                "我看淡世间",
-                "而如今！",
-                "我只剩下面无表情",
-                "我的目光如磐石般坚硬",
-                "我的心中只剩下坚持！",
-                "这就是我",
-                "一个小人物",
-                "方源的————坚持！",
-                "光芒骤放",
-                "不可逼视",
-                "坚持仙蛊",
-                "在这一刻",
-                "炼成！！！",
+				"在场的所有蛊仙都能回答这个问题",
+				"因为他们当中",
+				"有的因为责任而坚持",
+				"有的因为仇恨而坚持",
+				"有的因为精彩而坚持",
+				"有的因为爱情而坚持...",
+				"而方源的回答呢？",
+				"他仍旧面无表情",
+				"毫无所动地向前进",
+				"我曾经呐喊过",
+				"渐渐地",
+				"我不发出声音",
+				"我曾经哭泣过",
+				"渐渐地",
+				"我不再流泪",
+				"我曾经悲伤过",
+				"渐渐地",
+				"我能承受一切",
+				"我曾经喜悦过",
+				"渐渐地",
+				"我看淡世间",
+				"而如今！",
+				"我只剩下面无表情",
+				"我的目光如磐石般坚硬",
+				"我的心中只剩下坚持！",
+				"这就是我",
+				"一个小人物",
+				"方源的————坚持！",
+				"光芒骤放",
+				"不可逼视",
+				"坚持仙蛊",
+				"在这一刻",
+				"炼成！！！",
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
@@ -249,7 +245,7 @@ export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 			// "/assets/desktop-banner/6.webp",
 		], // 桌面横幅图片
 		mobile: [
-			"/assets/mobile-banner/my0.webp",
+			"/assets/mobile-banner/my1.webp",
 			// "/assets/mobile-banner/2.webp",
 			// "/assets/mobile-banner/3.webp",
 			// "/assets/mobile-banner/4.webp",
@@ -319,7 +315,7 @@ export const navBarConfig: NavBarConfig = {
 					icon: "material-symbols:book",
 				},
 				{
-					name: "Gallery",
+					name: "Albums",
 					url: "/albums/",
 					icon: "material-symbols:photo-library",
 				},

@@ -168,7 +168,7 @@ export const siteConfig: SiteConfig = {
 				"我的心中只剩下坚持！",
 				"这就是我",
 				"一个小人物",
-				"方源的————坚持！",
+				"方源的——坚持！",
 				"光芒骤放",
 				"不可逼视",
 				"坚持仙蛊",
@@ -372,7 +372,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "Winterwithwither",
-	bio: "纵观五域两天，我只悟出两个字————坚持！",
+	bio: "纵观五域两天，我只悟出两个字——坚持！",
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
 		speed: 80, // 打字速度（毫秒）

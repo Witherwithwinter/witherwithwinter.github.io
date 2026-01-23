@@ -187,7 +187,7 @@ export const siteConfig: SiteConfig = {
 		credit: {
 			enable: true, // 显示横幅图片来源文本
 
-			text: "画师：Osot-酒保", // 要显示的来源文本
+			text: "“仙道杀招————万蛟” 画师：Osot-酒保", // 要显示的来源文本
 			url: "https://space.bilibili.com/62037719", // （可选）原始艺术品或艺术家页面的 URL 链接
 		},
 

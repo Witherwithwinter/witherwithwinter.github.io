@@ -189,10 +189,10 @@ export const siteConfig: SiteConfig = {
 		},
 
 		credit: {
-			enable: false, // 显示横幅图片来源文本
+			enable: true, // 显示横幅图片来源文本
 
-			text: "Describe", // 要显示的来源文本
-			url: "", // （可选）原始艺术品或艺术家页面的 URL 链接
+			text: "画师：Osot-酒保", // 要显示的来源文本
+			url: "https://space.bilibili.com/62037719", // （可选）原始艺术品或艺术家页面的 URL 链接
 		},
 
 		navbar: {
@@ -249,7 +249,7 @@ export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 			// "/assets/desktop-banner/6.webp",
 		], // 桌面横幅图片
 		mobile: [
-			"/assets/mobile-banner/my.webp",
+			"/assets/mobile-banner/my0.webp",
 			// "/assets/mobile-banner/2.webp",
 			// "/assets/mobile-banner/3.webp",
 			// "/assets/mobile-banner/4.webp",

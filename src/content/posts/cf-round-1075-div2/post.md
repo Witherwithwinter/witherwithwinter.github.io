@@ -1,7 +1,8 @@
 ---
 title: Codeforces Round 1075 (Div. 2)
 published: 2026-01-24
-image: ./cover.png
+description: "继五连跪之后第一次上大分"
+image: "./cover.webp"
 tags: [Codeforces, Div.2]
 category: Tutorial
 draft: false

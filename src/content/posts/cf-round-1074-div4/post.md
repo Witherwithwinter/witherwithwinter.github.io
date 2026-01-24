@@ -1,15 +1,14 @@
 ---
 title: Codeforces Round 1074 (Div. 4) 
 published: 2026-01-20
-image: ./cover.png
+description: "2026 的第一场 div.4"
+image: "./cover.webp"
 tags: [Codeforces, Div.4]
 category: Tutorial
 draft: false
 ---
 
 # ☁️体验
-
-2026 的第一场 div.4。
 
 当天时间记错了，晚上刚打完牛客周赛，然后发现 div.4 和牛客周赛居然是同一天，有点猝不及防。
 
@@ -321,11 +320,11 @@ void solve()
 
 就像下面这样：
 
-![alt text](cow1.png)
+![alt text](cow1.webp)
 
-![alt text](cow2.png)
+![alt text](cow2.webp)
 
-![alt text](cow3.png)
+![alt text](cow3.webp)
 
 接下来，你会得到 $q$ 个询问，每个询问是一个二元组 $(p, x)$，表示把第 $p$ 头牛的战斗力改为 $x$。
 

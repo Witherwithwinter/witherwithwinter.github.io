@@ -1,7 +1,8 @@
 ---
 title: 牛客周赛 Round 127
 published: 2026-01-19
-image: ./cover.png
+description: "较为简单的一场周赛"
+image: "./cover.webp"
 tags: [牛客, 牛客周赛]
 category: Tutorial
 draft: false
@@ -9,7 +10,7 @@ draft: false
 
 # ☁️体验
 
-比较简单的一场周赛。
+除最后一题之外，感觉都挺简单。
 
 # 💡题解
 

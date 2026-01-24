@@ -1,7 +1,8 @@
 ---
 title: Codeforces Round 1072 (Div. 3)
 published: 2026-01-15
-image: ./cover.png
+description: "康复训练"
+image: "./cover.webp"
 tags: [Codeforces, Div.3]
 category: Tutorial
 draft: false

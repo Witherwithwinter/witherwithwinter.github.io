@@ -5,7 +5,7 @@ description: "继五连跪之后第一次上大分"
 image: "./cover.webp"
 tags: [Codeforces, Div.2]
 category: Tutorial
-draft: false
+draft: true
 ---
 
 # ☁️体验
@@ -186,7 +186,7 @@ void solve()
 
 ``` -->
 
-# 🎈模板部分
+# 🎈模板
 
 ## 火车头
 

@@ -20,16 +20,16 @@ export const friendsData: FriendItem[] = [
 		siteurl: "https://github.com/withastro/astro",
 		tags: ["Framework"],
 	},
+	// {
+	// 	id: 2,
+	// 	title: "Mizuki Docs",
+	// 	imgurl: "http://q.qlogo.cn/headimg_dl?dst_uin=3231515355&spec=640&img_type=jpg",
+	// 	desc: "Mizuki User Manual",
+	// 	siteurl: "https://docs.mizuki.mysqil.com",
+	// 	tags: ["Docs"],
+	// },
 	{
 		id: 2,
-		title: "Mizuki Docs",
-		imgurl: "http://q.qlogo.cn/headimg_dl?dst_uin=3231515355&spec=640&img_type=jpg",
-		desc: "Mizuki User Manual",
-		siteurl: "https://docs.mizuki.mysqil.com",
-		tags: ["Docs"],
-	},
-	{
-		id: 3,
 		title: "Vercel",
 		imgurl: "https://avatars.githubusercontent.com/u/14985020?v=4&s=640",
 		desc: "Develop. Preview. Ship.",
@@ -61,7 +61,7 @@ export const friendsData: FriendItem[] = [
 	// 	tags: ["Framework", "JavaScript"],
 	// },
 	{
-		id: 4,
+		id: 3,
 		title: "GitHub",
 		imgurl: "https://avatars.githubusercontent.com/u/9919?v=4&s=640",
 		desc: "Where the world builds software",
@@ -77,7 +77,7 @@ export const friendsData: FriendItem[] = [
 	// 	tags: ["Docs", "Reference"],
 	// },
 	{
-		id: 5,
+		id: 4,
 		title: "chengzisoft",
         imgurl: "https://earthcake.oss-cn-beijing.aliyuncs.com/%E5%8D%9A%E5%AE%A2%E5%A4%B4%E5%83%8F.jpg",
 		desc: "世界拯救技术宅",

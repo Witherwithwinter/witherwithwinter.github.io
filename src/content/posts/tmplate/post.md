@@ -3,7 +3,7 @@ title: TITLE
 published: 2026-01-01
 description: "NULL"
 image: "./cover.webp"
-tags: [NULL]
+tags: [tags]
 category: Tutorial
 draft: true
 ---
